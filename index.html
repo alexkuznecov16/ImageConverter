@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Image Converter</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">✦</span>
+        <span>Image<span class="logo__accent">Convert</span></span>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="nav__link active">Converter</a>
+        <a href="#" class="nav__link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="layout">
+      <!-- LEFT ADVERTISEMENT -->
+      <aside class="ad ad--left">
+        <span class="ad__label">ADVERTISEMENT</span>
+
+        <div class="ad__content">
+          <span>AD SPACE</span>
+          <small>160 × 600</small>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <section class="converter">
+        <div class="converter__header">
+
+          <span class="badge">
+            ✦ SIMPLE & FAST
+          </span>
+
+          <h1>
+            Convert your
+            <span>images.</span>
+          </h1>
+
+          <p>
+            Fast, simple and private image conversion.
+            No complicated settings.
+          </p>
+        </div>
+
+        <div class="converter-card">
+          <div class="upload-zone" id="uploadZone">
+            <input type="file" id="fileInput" accept="image/*" hidden>
+
+            <div class="upload-icon">
+              ↑
+            </div>
+
+            <h2 id="uploadTitle">
+              Drop your image here
+            </h2>
+
+            <p>
+              or click to browse from your computer
+            </p>
+
+            <button class="upload-button" id="chooseButton" type="button">
+              Choose image
+            </button>
+
+            <div id="previewBox"></div>
+
+            <span class="upload-hint">
+              PNG, JPG, JPEG, WEBP • Max 20 MB
+            </span>
+          </div>
+
+          <div class="conversion-settings">
+            <span class="setting-label">
+              TO FORMAT
+            </span>
+
+            <div class="format-selector" id="formatSelector">
+              <span id="selectedFormat">
+                JPG
+              </span>
+
+              <span class="arrow">
+                ⌄
+              </span>
+
+              <div class="format-dropdown" id="formatDropdown">
+                <div data-format="jpg">
+                  JPG
+                </div>
+
+                <div data-format="png">
+                  PNG
+                </div>
+
+                <div data-format="webp">
+                  WEBP
+                </div>
+
+                <div data-format="avif">
+                  AVIF
+                </div>
+
+                <div data-format="gif">
+                  GIF
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="convert-button" id="convertButton">
+            Convert image →
+          </button>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <span class="feature__icon">⚡</span>
+
+            <div>
+              <strong>Fast</strong>
+              <p>Quick conversion</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <span class="feature__icon">🔒</span>
+
+            <div>
+              <strong>Private</strong>
+              <p>Your files stay yours</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <span class="feature__icon">◈</span>
+
+            <div>
+              <strong>Simple</strong>
+              <p>No unnecessary settings</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT ADVERTISEMENT -->
+      <aside class="ad ad--right">
+
+        <span class="ad__label">ADVERTISEMENT</span>
+
+        <div class="ad__content">
+          <span>AD SPACE</span>
+          <small>160 × 600</small>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>
+        © 2026 ImageConvert
+      </span>
+
+      <div class="footer__links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
